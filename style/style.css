@@ -10,7 +10,7 @@
   }
   
   body{
-    background-color:#bebebe;
+    background-color:black;
   }
   section, footer{
     padding: 150px 0;
@@ -102,7 +102,6 @@ form button {
 form button:hover{
   background-color: #8f1c1a;
 }
-
 .filmesacao, .filmesdrama, .filmescomedia {
   margin-top:10px;
   padding: 5px;
@@ -123,9 +122,37 @@ form button:hover{
   width: 100%;
 }
 .filmes a {
+  color: #edb651;
+  text-transform: uppercase;
 }
 .filmes:hover{
+
    background-color: #edb651;
+   color: black;
+}
+.filmes a:hover{
+
+    color: black;
+    text-decoration: solid
+       
+}
+.titulo{
+  font-size: 40px;
+  font-family: Oswald;
+  color:#8f1c1a;
+
+}
+.secdestaques{
+  width:auto;
+  background-color: #edb651;
+padding: 1px;
+}
+.noticias{
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  margin-left: 150px ;
+
 }
 
 footer {
