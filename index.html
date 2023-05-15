@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <title>CineTime</title>
+</head>
+<body>
+   
+        <header> 
+        <div class="container">
+            
+        <nav class="top-bar.links">
+            <div class="logo">
+                <img src="/img/logo-no-background.png" alt="">
+            </div>
+            <ul>
+            <a href="#">Ação</a>
+            <a href="#">Comedia</a>
+            <a href="#">Terror</a>
+         </nav>
+        
+        <section class="banner">
+            <div class = "banner-text">
+                <h1>Lançamentos do Cinema</h1>
+                <p>Confira os ultimos lançamentos do cinema com um clique</p>
+
+        
+            </div>
+        </section>
+        </div>
+ </header>
+    <main>
+<form>
+    <input name="pesquisa" placeholder="Digite o Nome Do filme">
+    <button>Pesquisar</button>
+</form>
+<script>
+    const frmPesquisa = document.querySelector("form");
+    frmPesquisa.onsubmit = function(ev){
+        ev.preventDefault();
+
+        const pesquisa = ev.target.pesquisa.value;
+        if(pesquisa =="") {
+            alert("Campo Vazio!");
+            return
+        }}
+    </script>
+
+
+
+        <section class="filmesacao">
+            <div class="filmes"> <a href="filmes/filmeA1/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="">
+                        <h1>Vingadores</h1>
+                    </a>
+                    </div>
+                    <div class="filmes"> <a href="filmes/filmeA2/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" alt="">
+                        <h1>Duro de Matar 1</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeA3/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNjcxOTJhZTEtMWFiYi00NTkwLTlkMzktZDQwMGQ0ZjM3YWU2XkEyXkFqcGdeQXVyMTAxNzQ1NzI@._V1_SX300.jpg" alt="">
+                        <h1>ESQUEMA DE RISCO: OPERAÇÃO FORTUNE</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeA4/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_SX300.jpg" alt="">
+                        <h1>JOHN WICK 4: BABA YAGA</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeA5/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTcyM2IzZjktYmFkOS00MWMzLWE2ZDAtNGIzMjZlOWU2MmY0XkEyXkFqcGdeQXVyMTUxNTk0NTU4._V1_SX300.jpg" alt="">
+                        <h1>AGENTE INFILTRADO</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeA6/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_SX300.jpg" alt="">
+                        <h1>AVATAR: O CAMINHO DA ÁGUA</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeA7/">
+                        <img src="https://br.web.img3.acsta.net/c_310_420/pictures/22/05/16/17/59/5165498.jpg" alt="">
+                        <h1>TUDO EM TODO O LUGAR AO MESMO TEMPO</h1></a>
+                    </div>
+        </section>
+        <section class="filmesdrama">
+            <div class="filmes"> <a href="filmes/filmeD1/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZDQ4Njg4YTctNGZkYi00NWU1LWI4OTYtNmNjOWMyMjI1NWYzXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_SX300.jpghttps://m.media-amazon.com/images/M/MV5BZDQ4Njg4YTctNGZkYi00NWU1LWI4OTYtNmNjOWMyMjI1NWYzXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_SX300.jpg" alt="">
+                        <h1>The Whale</h1>
+                    </a>
+                    </div>
+                    <div class="filmes"> <a href="filmes/filmeD2/">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/e/e4/La_piel_que_habito.png" alt="">
+                        <h1>A PELE QUE HABITO</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeD3/">
+                        <img src="https://encenasaudemental.com/wp-content/uploads/2017/05/Historias-Cruzadas.jpg" alt="">
+                        <h1>HISTÓRIAS CRUZADAS</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeD4/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTM5NTQ3MTYxN15BMl5BanBnXkFtZTcwODE2Nzk3OQ@@._V1_.jpg" alt="">
+                        <h1>JOBS</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeD5/">
+                        <img src="https://br.web.img3.acsta.net/medias/nmedia/18/91/88/38/20167659.jpg" alt="">
+                        <h1>ENCONTRO MARCADO</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeD6/">
+                        <img src="https://br.web.img3.acsta.net/pictures/20/12/18/10/24/4751126.jpg" alt="">
+                        <h1>PALMER</h1></a>
+                    </div>
+                    <div class="filmes"><a href="filmes/filmeD7/">
+                        <img src="https://br.web.img2.acsta.net/pictures/17/11/28/18/32/3262971.jpg" alt="">
+                        <h1>EXTRAORDINÁRIO</h1></a>
+                    </div>
+                    </section>
+                    <section class="filmescomedia">
+                        <div class="filmes"> <a href="filmes/filmeC1/">
+                                    <img src="https://wp.ufpel.edu.br/empauta/files/2015/06/divertida-mente-poster-1.jpg" alt="">
+                                    <h1>DIVERTIDAMENTE</h1>
+                                </a>
+                                </div>
+                                <div class="filmes"> <a href="filmes/filmeC2/">
+                                    <img src="https://br.web.img3.acsta.net/medias/nmedia/18/90/67/52/20107757.jpg" alt="">
+                                    <h1>10 Coisas que Eu Odeio em Você</h1></a>
+                                </div>
+                                <div class="filmes"><a href="filmes/filmeC3/">
+                                    <img src="https://www.cafecomfilme.com.br/media/k2/items/cache/20f470fff63d5a3af8846bd8cab92312_XL.jpg?t=20210204_201414" alt="">
+                                    <h1>O Auto da Compadecida</h1></a>
+                                </div>
+                                <div class="filmes"><a href="filmes/filmeC4/">
+                                    <img src="https://br.web.img3.acsta.net/medias/nmedia/18/97/52/82/20534159.jpg" alt="">
+                                    <h1>AS BRANQUELAS</h1></a>
+                                </div>
+                                <div class="filmes"><a href="filmes/filmeC5/">
+                                    <img src="https://m.media-amazon.com/images/I/71Jh+sQHEaL.jpg" alt="">
+                                    <h1>O DIABO VESTE PRADA</h1></a>
+                                </div>
+                                <div class="filmes"><a href="filmes/filmeA6/">
+                                    <img src="https://images.filmesnocinema.com.br/covers/gente-grande.jpg" alt="">
+                                    <h1>Gente Grande</h1></a>
+                                </div>
+                                <div class="filmes"><a href="filmes/filmeA7/">
+                                    <img src="https://br.web.img2.acsta.net/medias/nmedia/18/91/54/04/20150812.jpg" alt="">
+                                    <h1>SHREK</h1></a>
+                                </div>
+                                </section>
+
+                    
+
+    </main>
+        
+        <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+               <img src="/img/logo-no-background.png" alt="">
+                <p>Entretenimento e Diversão</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    
+                </div>
+
+        </div>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Suporte</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">(81) 4002-8922</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">E-mail: cinetime.suporte@gmail.com</a>
+            </li>
+        
+        </ul>
+    
+        
+        <div id="footer_subscribe">
+            <h3>Increva-se</h3>
+
+            <p>Mantenha-se informado sobre atualizações no nosso catálogo de filmes!</p>
+
+            <div id="input_group">
+                <input type="email" name="" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2023 all rights reserver
+    </div>
+</footer>
+</body>
+</html>
+    
+
+

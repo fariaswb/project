@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    
+  }
+  
+  body{
+    background-color:#bebebe;
+  }
+  section, footer{
+    padding: 150px 0;
+
+  }
+  .container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
+section .banner{
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+  margin: 200px;
+
+}
+section .banner-text{
+  font-size: 30px;
+  font-family: "Oswald";
+  color: #ffffff;
+}
+section .banner-text h1{
+  font-size: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+header{
+  background-position: center;
+  background-size: cover;
+  background-attachment:fixed;
+  background-image: url(/img/IMAGEM-TOPO.png);
+  background-size: 3356 2000;
+}
+  nav{
+    padding-top: 30px ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    font-family: "Oswald";
+       
+}
+
+nav ul{
+  align-items: center;
+  display: flex;
+  
+}
+nav ul a{
+  margin: 0 25px;
+  text-transform: uppercase;
+  color: aliceblue;
+  font-size: 20px;
+  display: block;
+}
+nav ul a:hover{
+  background-color: #edb651;
+  border-bottom: 2px solid white; 
+  color: #8f1c1a;
+}
+
+form{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+}
+form input{
+  padding: 5px;
+  border: none;
+  outline:none;
+  flex:1;
+}
+form button {
+  padding:5px 15px;
+  background-color:#edb651;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 10px ;
+  cursor: pointer;
+  font-family: "Oswald";
+
+}
+form button:hover{
+  background-color: #8f1c1a;
+}
+
+.filmesacao, .filmesdrama, .filmescomedia {
+  margin-top:10px;
+  padding: 5px;
+  display:flex;
+  font-family: "Oswald";
+  font-size: 10px;
+  cursor: pointer;
+}
+.filmes {
+  padding: 20px;
+  width: 240px;
+  border: 2px solid #edb651 ;
+  border-radius: 5%;
+  text-align: center;
+  margin: 10px;
+}
+.filmes img{
+  width: 100%;
+}
+.filmes a {
+}
+.filmes:hover{
+   background-color: #edb651;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8f1c1a;
+  padding: 10px;
+  color: white;
+  font-family: Oswald;
+}
+
+footer a {
+  text-decoration: none;
+  color:#edb651;
+  margin-left: 5px;
+  display: block;
+}
+
+footer a:hover {
+  background-color: #edb651;
+  color: white;
+}
