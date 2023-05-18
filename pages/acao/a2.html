@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/script/script.js"></script>
+    <title>CineTime</title>
+</head>
+<body>
+     <!-- topo fixo não alterar -->
+     <header> 
+        <div class="container">
+            
+        <nav class="top-bar.links">
+            <div class="logo">
+                <img src="/img/logo-no-background.png" alt="">
+            </div>
+            <ul>
+                <a href="/index.html">HOME</a> 
+                <a href="/pages/acao/acao.html">Ação</a>
+                <a href="/pages/comedia/comedia.html">Comedia</a>
+                <a href="/pages/drama/drama.html">Drama</a>
+         </nav>
+        
+        <section class="banner">
+            <div class = "banner-text">
+                <h1>Lançamentos do Cinema</h1>
+                <p>Confira os ultimos lançamentos do cinema com um clique</p>
+
+        
+            </div>
+        </section>
+        </div>
+ </header>
+
+
+ <!---conteudo post-->
+ <section class = postfilmes>
+    <div class="titulopost"> Duro de Matar 1 </div> 
+    <div class="capafilme">
+        <img src="https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" alt="" class="filmes">
+    </div>
+    <div class =textopost>O policial de Nova York John McClane está visitando sua família no Natal. Ele participa de uma confraternização de
+         fim de ano na sede da empresa japonesa em que a esposa trabalha. A festa é interrompida por terroristas que invadem o edifício de luxo.
+          McClane não demora a perceber que não há ninguém para salvá-los, a não ser ele próprio.</div>
+    <div class="clear"></div>
+        </div>
+
+ <!---botão do filme--> 
+ <div class="botoes">
+ <button id="botaofilme" onclick="alternarIframe()">ASSISTIR ONLINE</button>
+    
+ <div id="iframeContainer" class="playfilme">
+    <iframe src="https://streamtape.com/e/KzLk02aywqi0YM0/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
+ </div>
+<br> <br><br> <br><br> <br>
+</div>  
+
+
+
+<!--avaliação-->
+
+<h1 class="texto1">Avalie o filme</h1>
+    
+<div id="rating-container">
+    <input type="radio" id="star1" name="rating" value="1" />
+    <label for="star1"></label>
+    <input type="radio" id="star2" name="rating" value="2" />
+    <label for="star2"></label>
+    <input type="radio" id="star3" name="rating" value="3" />
+    <label for="star3"></label>
+    <input type="radio" id="star4" name="rating" value="4" />
+    <label for="star4"></label>
+    <input type="radio" id="star5" name="rating" value="5" />
+    <label for="star5"></label>
+</div>
+</br> </br></br> </br>
+<!--avaliação-->
+
+
+
+
+<!---comentario-->
+
+<h1 class="texto1" id='textcoment'>Comentarios</h1>
+    
+<div id="localcomentario"></div>
+
+<form id="comment-form">
+    
+      <label for="nickname">Nome:</label>
+        <input type="text" id="nickname" name="nickname" required>
+        <br>
+    <textarea id="comment-input" placeholder="Digite seu comentário"></textarea>
+    <button type="submit">Enviar</button>
+</form>
+
+
+<!---comentario-->
+
+ </section>
+
+
+
+
+ <!--footer-->
+ <footer>
+
+
+    <!-- social midia-->  
+    <div id="footer_content">
+        <div id="footer_contacts">
+           <img src="/img/logo-no-background.png" alt="">
+            <p>Entretenimento e Diversão</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- contato-->
+    <ul class="footer-list">
+        <li>
+            <h3>Suporte</h3>
+        </li>
+        <li>
+            <a href="#" class="footer-link">(81) 4002-8922</a>
+        </li>
+        <li>
+            <a href="#" class="footer-link">E-mail: cinetime.suporte@gmail.com</a>
+        </li>
+    
+    </ul>
+
+    <!-- newsletters-->
+    <div id="footer_subscribe">
+        <h3>Increva-se</h3>
+
+        <p>Mantenha-se informado sobre atualizações no nosso catálogo de filmes!</p>
+
+        <div id="input_group">
+            <input type="email" name="" id="email">
+            <button>
+                <i class="fa-regular fa-envelope"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- copyright-->
+<div id="footer_copyright">
+    &#169
+    2023 all rights reserver
+</div>
+</footer>
+</body>
+</html>
+
+
+
+
+</body>
+</html>

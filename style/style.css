@@ -6,7 +6,7 @@
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
-    
+    justify-content: center;
   }
   
   body{
@@ -14,7 +14,7 @@
   }
   section, footer{
     padding: 150px 0;
-
+    
   }
   .container{
     max-width: 1400px;
@@ -102,8 +102,10 @@ form button {
 form button:hover{
   background-color: #8f1c1a;
 }
-.filmesacao, .filmesdrama, .filmescomedia {
+.filmesd{
   margin-top:10px;
+  margin-left: 200px;
+  margin-right: 200px;
   padding: 5px;
   display:flex;
   font-family: "Oswald";
@@ -135,13 +137,6 @@ form button:hover{
     color: black;
     text-decoration: solid
        
-}
-.titulo{
-  font-size: 40px;
-  font-family: Oswald;
-  color:#8f1c1a;
-  text-transform: uppercase;
-
 }
 .secdestaques{
   width:auto;
@@ -177,4 +172,118 @@ footer a {
 footer a:hover {
   background-color: #edb651;
   color: white;
+}
+
+.postfilmes{
+  background-color:black;
+  margin-left: 400px;
+  margin-right: 400px;
+  border-radius: 30px;
+
+}
+.textopost{
+  margin-left: 200px;
+  margin-right: 200px;
+  color: #ffffff;
+  font-family: "oswald";
+  font-weight: lighter;
+  font-size: 20px;
+}
+.titulopost, .titulo{
+  font-size: 40px;
+  font-family: Oswald;
+  color:#8f1c1a;
+  text-transform: uppercase;
+  margin-left: 400px;
+  font-weight: bold;
+}
+.capafilme{
+ float: left;
+}
+.clear {
+  clear: both;
+}
+.texto1{
+  font-size: 20px;
+  font-family: Oswald;
+  color:#8f1c1a;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.playfilme {
+  display: none;
+
+}
+#iframeContainer{
+  margin: 100px;
+}
+#botaofilme{
+ margin-left: 500px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color:#edb651;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "oswald";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#botaofilme:hover {
+  background-color:#8f1c1a;
+}
+
+#comment-input {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#localcomentario {
+  margin-top: 20px;
+}
+
+#comment-form{
+justify-content: right;
+display: block;
+font-family: 'oswald';
+font-weight: bold;
+color: #edb651;
+margin-right: 600px;
+background-color: #8f1c1a;
+}
+#nickname, #comment-input{
+  font-size: 15px;
+  border: 2px solid #edb651;
+  margin:4px ;
+
+}
+
+#rating-container {
+  margin-left: 20px;
+  display: inline-block;
+  direction: rtl;
+}
+
+#rating-container input[type="radio"] {
+  display: none;
+}
+
+#rating-container label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('/img/estrela2.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+#rating-container label:hover,
+#rating-container input[type="radio"]:checked ~ label {
+  background-image: url('/img/estrela1.png'); 
+  background-size: cover;
 }
