@@ -194,7 +194,7 @@ footer a:hover {
   font-family: Oswald;
   color:#8f1c1a;
   text-transform: uppercase;
-  margin-left: 400px;
+ margin-left: 200px;
   font-weight: bold;
 }
 .capafilme{
@@ -218,7 +218,7 @@ footer a:hover {
   margin: 100px;
 }
 #botaofilme{
- margin-left: 500px;
+ margin: auto;
   display: inline-block;
   padding: 10px 20px;
   font-size: 30px;
@@ -253,7 +253,7 @@ display: block;
 font-family: 'oswald';
 font-weight: bold;
 color: #edb651;
-margin-right: 600px;
+margin: auto;
 background-color: #8f1c1a;
 }
 #nickname, #comment-input{
