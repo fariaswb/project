@@ -45,20 +45,45 @@
 
  <!-- barra de pesquisa-->     
 <form>
-    <input name="pesquisa" placeholder="Digite o Nome Do filme">
-    <button>Pesquisar</button>
+    <input type="text" name="pesquisa" placeholder="Digite o nome do filme">
+    <button onclick="buscarFilme()">Pesquisar</button>
 </form>
-<script>
-    const frmPesquisa = document.querySelector("form");
-    frmPesquisa.onsubmit = function(ev){
-        ev.preventDefault();
 
-        const pesquisa = ev.target.pesquisa.value;
-        if(pesquisa =="") {
-            alert("Campo Vazio!");
-            return
-        }}
-    </script>
+<script>
+   const frmPesquisa = document.querySelector("form");
+frmPesquisa.onsubmit = function(ev) {
+    ev.preventDefault();
+
+    const pesquisa = ev.target.pesquisa.value;
+    if (pesquisa.trim() === "") {
+        alert("Campo Vazio!");
+        return;
+    }
+
+    const filmes = [
+        { nome: "Vingadores", pagina: "pages/acao/a1.html" },
+        { nome: "Duro de Matar", pagina: "pages/acao/a2.html" },
+        { nome: "Esquema de Risco", pagina: "pages/acao/a3.html" },
+        { nome: "John Wick", pagina: "pages/acao/a4.html" },
+        { nome: "Agente Infiltrado", pagina: "pages/acao/a5.html" },
+        { nome: "Avatar", pagina: "pages/acao/a6.html" },
+        { nome: "Tudo em Todo Lugar", pagina: "pages/acao/a7.html" },
+
+        // Adicione mais filmes aqui
+    ];
+
+    // Verificar se o valor da pesquisa corresponde a algum dos filmes da lista
+    const filmeEncontrado = filmes.find(filme => filme.nome.toLowerCase() === pesquisa.trim().toLowerCase());
+    if (filmeEncontrado) {
+        // Redirecionar o usuário para a página correta do filme
+        window.location.href = filmeEncontrado.pagina;
+    } else {
+        alert("Filme não encontrado!");
+    }
+}
+
+</script>
+    
 <!-- barra de pesquisa-->   
 
 
