@@ -76,13 +76,27 @@ frmPesquisa.onsubmit = function(ev) {
         { nome: "Avatar", pagina: "pages/acao/a6.html" },
         { nome: "Tudo em Todo Lugar", pagina: "pages/acao/a7.html" },
 
-        // Adicione mais filmes aqui
-    ];
+        { nome: "DIVERTIDAMENTE", pagina: "pages/comedia/c1.html" },
+        { nome: "10 Coisas", pagina: "pages/comedia/c2.html" },
+        { nome: "O AUTO DA COMPADECIDA", pagina: "pages/comedia/c3.html" },
+        { nome: "AS BRANQUELAS", pagina: "pages/comedia/c4.html" },
+        { nome: "O DIABO VESTE PRADA", pagina: "pages/comedia/c5.html" },
+        { nome: "GENTE GRANDE", pagina: "pages/comedia/c6.html" },
+        { nome: "Shrek", pagina: "pages/comedia/c7.html" },
 
-    // Verificar se o valor da pesquisa corresponde a algum dos filmes da lista
+        { nome: "A BALEIA", pagina: "pages/drama/d1.html" },
+        { nome: "A PELE QUE HABITO", pagina: "pages/drama/d2.html" },
+        { nome: "Histórias Cruzadas", pagina: "pages/cdrama/d3.html" },
+        { nome: "JOBS", pagina: "pages/drama/d4.html" },
+        { nome: "Encontro Marcado", pagina: "pages/drama/d5.html" },
+        { nome: "Palmer", pagina: "pages/drama/d6.html" },
+        { nome: "Extraordinário", pagina: "pages/drama/d7.html" },
+       
+    ];
+    
     const filmeEncontrado = filmes.find(filme => filme.nome.toLowerCase() === pesquisa.trim().toLowerCase());
     if (filmeEncontrado) {
-        // Redirecionar o usuário para a página correta do filme
+        
         window.location.href = filmeEncontrado.pagina;
     } else {
         alert("Filme não encontrado!");
