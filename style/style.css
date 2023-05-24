@@ -287,3 +287,11 @@ background-color: #8f1c1a;
   background-image: url('/img/estrela1.png'); 
   background-size: cover;
 }
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;  
+  display: none;
+}
+
