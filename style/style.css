@@ -8,7 +8,8 @@
     text-decoration: none;
     justify-content: center;
   }
-  
+
+
   body{
     background-color:black;
   }
@@ -294,4 +295,8 @@ background-color: #8f1c1a;
   margin: 8px;  
   display: none;
 }
-
+.mensagem{
+  color: #fff;
+  font-family: "oswald";
+  text-decoration: wavy;
+}

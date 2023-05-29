@@ -65,20 +65,34 @@
 <h1 class="texto1">Avalie o filme</h1>
     
 <div id="rating-container">
-    <input type="radio" id="star1" name="rating" value="1" />
-    <label for="star1"></label>
-    <input type="radio" id="star2" name="rating" value="2" />
-    <label for="star2"></label>
-    <input type="radio" id="star3" name="rating" value="3" />
-    <label for="star3"></label>
-    <input type="radio" id="star4" name="rating" value="4" />
-    <label for="star4"></label>
     <input type="radio" id="star5" name="rating" value="5" />
     <label for="star5"></label>
+    <input type="radio" id="star4" name="rating" value="4" />
+    <label for="star4"></label>
+    <input type="radio" id="star3" name="rating" value="3" />
+    <label for="star3"></label>
+    <input type="radio" id="star2" name="rating" value="2" />
+    <label for="star2"></label>
+    <input type="radio" id="star1" name="rating" value="1" />
+    <label for="star1"></label>
 </div>
-</br> </br></br> </br>
-<!--avaliação-->
 
+<div class="mensagem"></div>
+
+<script>
+    var ratingRadios = document.querySelectorAll('input[name="rating"]');
+    var mensagemElement = document.querySelector('.mensagem');
+
+    ratingRadios.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+            var rating = this.value;
+            mensagemElement.innerText = 'Você avaliou o filme com ' + rating + ' estrelas!';
+        });
+    });
+</script>
+
+
+<!--avaliação-->
 
 
 
