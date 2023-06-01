@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../img/logopreta.png">
     <title>CineTime</title>
 </head>
 <body>
