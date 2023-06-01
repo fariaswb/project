@@ -4,36 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
-    <script src="/script/script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
     <title>CineTime</title>
 </head>
 <body>
-     <!-- topo fixo não alterar -->
-     <header> 
-        <div class="container">
-            
-        <nav class="top-bar.links">
-            <div class="logo">
-                <img src="/img/logo-no-background.png" alt="">
-            </div>
-            <ul>
-                <a href="/index.html">HOME</a> 
-                <a href="/pages/acao/acao.html">Ação</a>
-                <a href="/pages/comedia/comedia.html">Comédia</a>
-                <a href="/pages/drama/drama.html">Drama</a>
-         </nav>
-        
-        <section class="banner">
-            <div class = "banner-text">
-                <h1>Lançamentos do Cinema</h1>
-                <p>Confira os últimos lançamentos do cinema com um clique</p>
-
-        
-            </div>
-        </section>
-        </div>
- </header>
+<?php
+include 'topo2.php';
+?>
 
 
  <!---conteudo post-->
@@ -53,7 +31,7 @@
  <button id="botaofilme" onclick="alternarIframe()">ASSISTIR ONLINE</button>
     
  <div id="iframeContainer" class="playfilme">
-    <iframe src="https://streamtape.com/e/m1eL8DOe3pubgWY/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
+        <iframe src="https://streamtape.com/e/m1eL8DOe3pubgWY/" width="800" height="600" frameborder="0" allowfullscreen></iframe>
  </div>
 <br> <br><br> <br><br> <br>
 </div>  
@@ -117,68 +95,14 @@
  </section>
 
 
+ <?php
+include '../rodape.php';
+?>
 
-
- <!--footer-->
- <footer>
-
-
-    <!-- social midia-->  
-    <div id="footer_content">
-        <div id="footer_contacts">
-           <img src="/img/logo-no-background.png" alt="">
-            <p>Entretenimento e Diversão</p>
-
-            <div id="footer_social_media">
-                <a href="#" class="footer-link" id="instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#" class="footer-link" id="facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- contato-->
-    <ul class="footer-list">
-        <li>
-            <h3>Suporte</h3>
-        </li>
-        <li>
-            <a href="#" class="footer-link">(81) 4002-8922</a>
-        </li>
-        <li>
-            <a href="#" class="footer-link">E-mail: cinetime.suporte@gmail.com</a>
-        </li>
-    
-    </ul>
-
-    <!-- newsletters-->
-    <div id="footer_subscribe">
-        <h3>Increva-se</h3>
-
-        <p>Mantenha-se informado sobre atualizações no nosso catálogo de filmes!</p>
-
-        <div id="input_group">
-            <input type="email" name="" id="email">
-            <button>
-                <i class="fa-regular fa-envelope"></i>
-            </button>
-        </div>
-    </div>
-</div>
-<!-- copyright-->
-<div id="footer_copyright">
-    &#169
-    2023 all rights reserver
-</div>
-</footer>
-</body>
-</html>
-
-
-
+ 
 
 </body>
 </html>
+
+
+

@@ -45,7 +45,7 @@ header{
   background-position: center;
   background-size: cover;
   background-attachment:fixed;
-  background-image: url(/img/IMAGEM-TOPO.png);
+  background-image: url(img/IMAGEM-TOPO.png);
   background-size: 3356 2000;
 }
   nav{
@@ -278,14 +278,14 @@ background-color: #8f1c1a;
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-image: url('/img/estrela2.png');
+  background-image: url('img/estrela2.png');
   background-size: cover;
   cursor: pointer;
 }
 
 #rating-container label:hover,
 #rating-container input[type="radio"]:checked ~ label {
-  background-image: url('/img/estrela1.png'); 
+  background-image: url('img/estrela1.png'); 
   background-size: cover;
 }
 .mobile-menu div {
