@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <script src="../script.js"></script>
+
     <link rel="icon" type="image/x-icon" href="../img/logopreta.png">
 
     <title>CineTime</title>
@@ -22,9 +22,7 @@ include 'topo2.php';
         <img src="https://m.media-amazon.com/images/M/MV5BZDQ4Njg4YTctNGZkYi00NWU1LWI4OTYtNmNjOWMyMjI1NWYzXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_SX300.jpghttps://m.media-amazon.com/images/M/MV5BZDQ4Njg4YTctNGZkYi00NWU1LWI4OTYtNmNjOWMyMjI1NWYzXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_SX300.jpg" alt="" class="filmes">
     </div>
     <div class =textopost>Em A Baleia, seguimos um professor de inglês e seu relacionamento fragilizado com sua filha, Ellie. Charlie (Brendan Fraser) é um professor de inglês recluso, que vive com obesidade severa e luta contra um transtorno de compulsão alimentar. Ele dá aulas online, mas sempre deixa a webcam desligada, com medo de sua aparência. Apesar de viver sozinho, ele é cuidado pela sua amiga e enfermeira, Liz (Hong Chau). Mesmo assim, ele é sozinho, convivendo diariamente apenas com a culpa, por ter abandonado Ellie (Sadie Sink), sua filha hoje adolescente que ele deixou junto com a mãe Mary (Samantha Morton), ao se apaixonar por um homem. Agora, ele irá buscar se reconectar com a filha adolescente e reparar seus erros do passado. Para isso, ele pede para que Ellie vá visitá-lo 
-        sem avisar sua mãe e ela aceita, com o única condição de que ele a ajuda a reescrever uma redação para a escola.
-    </div>
-    <div class="clear"></div>
+        sem avisar sua mãe e ela aceita, com o única condição de que ele a ajuda a reescrever uma redação para a escola. <br><br>
         </div>
 
  <!---botão do filme--> 
@@ -101,7 +99,7 @@ include 'topo2.php';
  <?php
 include '../rodape.php';
 ?>
-
+<script src="../script.js"></script>
 </body>
 </html>
 

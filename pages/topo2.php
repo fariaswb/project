@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/bebaa3aead.js" crossorigin="anonymous"></script>
 
     
     <title>CineTime</title>
 </head>
 <body>
-    <!-- topo fixo não alterar -->
-        <header> 
+     <!-- topo fixo não alterar -->
+     <header> 
         <div class="container">
             
-        <nav class="top-bar.links">
+        <nav class="menu">
             <div class="logo">
                 <img src="../img/logo-no-background.png" alt="">
             </div>
-            <ul>
+            <ul class= "ul">
                 <a href="../index.php">HOME</a> 
                 <a href="acao.php">Ação</a>
                 <a href="comedia.php">Comédia</a>
                 <a href="drama.php">Drama</a>
-                
-                 <div class="mobile-menu">
+                <div class ="close" onclick = "fecharMenu()">
+                <i class="fa-sharp fa-solid fa-circle-xmark"></i>
 
-                    <div class="linha1"></div>
-                    <div class="linha2"></div>
-                    <div class="linha3"></div>
+                </div>
+             </ul>
+                
+                 <div class="mobile-menu" onclick="abrirMenu()">
+                 <i class="fa-solid fa-bars"></i>
                 </div>
          </nav>
         
@@ -101,6 +104,7 @@ frmPesquisa.onsubmit = function(ev) {
     
 <!-- barra de pesquisa-->   
 
+<script src="script.js"></script>
 </body>
 </html>
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="img/logopreta.png">
+    <script src="https://kit.fontawesome.com/bebaa3aead.js" crossorigin="anonymous"></script>
     <title>CineTime</title>
 </head>
 <body>
@@ -25,7 +26,7 @@ include 'topo.php';
                 <h1>The Whale</h1>
                     </a>
                     </div>
-                    <div class="filmes"><a href="/pages/comedia.php">
+                    <div class="filmes"><a href="pages/comedia.php">
                         <img src="https://br.web.img3.acsta.net/medias/nmedia/18/97/52/82/20534159.jpg" alt="">
                         <h1>AS BRANQUELAS</h1></a>
                     </div>
@@ -56,15 +57,13 @@ include 'topo.php';
 
 
 <!-- hover de noticias e criticas-->   
+<div class="titulo"> Fique por dentro do mundo do cinema</div>
 <section class="secdestaques">
-    <div class="titulo"> Fique por dentro do mundo do cinema</div>
-       <section class= noticias> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTguwW0MwhTPTiD4jLs9-b9wh1lSkklxT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL1DD10E84B9B08A35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <div class ="criticas"> <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTguwW0MwhTPTiD4jLs9-b9wh1lSkklxT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
+        <div class ="trailers"><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL1DD10E84B9B08A35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
     </section>
 
 
-</section>
 <!-- hover de noticias e criticas-->  
                     
 
@@ -76,7 +75,7 @@ include 'rodape.php';
 
 
 
-
+<script src="script.js"></script>
     
 </body>
 </html>

@@ -62,6 +62,7 @@ include 'topo2.php';
 include '../rodape.php';
 ?>
 
+<script src="../script.js"></script>
 
 
 </body>
