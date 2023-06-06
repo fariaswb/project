@@ -75,25 +75,59 @@ include 'topo2.php';
 
 <!---comentario-->
 
-<h1 class="texto1" id='textcoment'>Comentarios</h1>
-    
-<div id="localcomentario"></div>
+<h1 class="texto1" id="textcoment">Comentários</h1>
 
-<form id="comment-form">
-    
-      <label for="nickname">Nome:</label>
-        <input type="text" id="nickname" name="nickname" required>
-        <br>
-    <textarea id="comment-input" placeholder="Digite seu comentário"></textarea>
+<form id="comment-form" action="processar_comentario.php" method="POST">
+    <label for="nickname">Nome:</label>
+    <input type="text" id="nickname" name="nickname" required><br>
+    <textarea id="comment-input" name="comment" placeholder="Digite seu comentário"></textarea>
     <button type="submit">Enviar</button>
 </form>
+
+<div id="localcomentario">
+</div>
+
+<script>
+    document.getElementById("comment-form").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        var form = event.target;
+        var formData = new FormData(form);
+
+        fetch(form.action, {
+            method: form.method,
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+          
+            form.reset();
+            atualizarComentarios();
+        })
+        .catch(error => console.error(error));
+    });
+
+    function atualizarComentarios() {
+        fetch("carregar_comentarios.php") 
+            .then(response => response.text())
+            .then(data => {
+                
+                document.getElementById("localcomentario").innerHTML = data;
+            })
+            .catch(error => console.error(error));
+    }
+
+    window.addEventListener("load", atualizarComentarios);
+</script>
 
 
 <!---comentario-->
 
  </section>
 
-
+<?php
+include '../carregar_comentarios.php';
+include '../processar_comentario.php';
+?>
 
 
  <?php
